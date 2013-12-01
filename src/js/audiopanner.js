@@ -22,7 +22,13 @@ videojs.AudioContext = videojs.CoreObject.extend({
         this.splitter = this.context.createChannelSplitter(2);
     }
 });
-
+/**
+ * Create MediaElementSourceNode and connect the splitter, channels gains
+ * and merger to AudioContext destination
+ * @param node
+ * @param output
+ * @param input
+ */
 videojs.AudioContext.prototype.connect = function (node, output, input){
     //Gets media audio Source Node
     this.source = this.context.createMediaElementSource(node);
@@ -40,25 +46,43 @@ videojs.AudioContext.prototype.connect = function (node, output, input){
     //Connect Merger output to context destination
     this.merger.connect(this.context.destination, 0, 0);
 };
+/**
+ * Mute right channel and pan audio to left
+ */
 videojs.AudioContext.prototype.panToLeft = function(){
     this.gainR.disconnect();
     this.gainL.connect(this.merger, 0, 0);
 };
+/**
+ * Mute left channel and pan audio to right
+ */
 videojs.AudioContext.prototype.panToRight = function(){
     this.gainL.disconnect();
     this.gainR.connect(this.merger, 0, 1);
 };
+/**
+ * Enable stereo mode
+ */
 videojs.AudioContext.prototype.panToStereo = function(){
     this.gainL.connect(this.merger, 0, 0);
     this.gainR.connect(this.merger, 0, 1);
 };
 
+/**
+ * Mute right channel and pan audio to left
+ */
 videojs.Player.prototype.panToLeft = function(){
     this.ac.panToLeft();
-}
+};
+/**
+ * Mute left channel and pan audio to right
+ */
 videojs.Player.prototype.panToRight = function(){
     this.ac.panToRight();
 };
+/**
+ * Enable stereo mode
+ */
 videojs.Player.prototype.panToStereo = function(){
     this.ac.panToStereo();
 };

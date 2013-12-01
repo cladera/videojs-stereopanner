@@ -13,6 +13,7 @@
         "window":true,
         "_":true,
         "FileReader":true,
-        "videojs":true
+        "videojs":true,
+        "AudioContext":true
     }
 }

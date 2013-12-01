@@ -14,7 +14,7 @@ module.exports = function(grunt) {
             build: {
                 options: {},
                 src: [
-                    'src/audiopanner.js'
+                    'src/js/audiopanner.js'
                 ],
                 dest:'build/js/<%= pkg.name %>.js'
             }
