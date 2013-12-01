@@ -2,7 +2,8 @@
  * Created by cgcladera on 01/12/13.
  */
 /**
- * Created by cgcladera on 01/12/13.
+ * AudioContext helper
+ * @type {*|void|Object}
  */
 videojs.AudioContext = videojs.CoreObject.extend({
     init: function(){
@@ -92,6 +93,7 @@ videojs.plugin('audiopanner', function(options){
     var player = this;
     player.ac = player.ac || videojs.AudioContext.create();
 
+    //TODO: Merge options with defaults
     options = options || {};
 
     player.ready(function(){
