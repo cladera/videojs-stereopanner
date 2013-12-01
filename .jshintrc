@@ -1,0 +1,18 @@
+{
+    "curly" : true,
+    "eqnull" : true,
+    "eqeqeq" : true,
+    "undef" : true,
+    "predef" : [],
+    "globals" : {
+        "setTimeout": true,
+        "jQuery" : true,
+        "console":true,
+        "document":true,
+        "$":true,
+        "window":true,
+        "_":true,
+        "FileReader":true,
+        "videojs":true
+    }
+}
