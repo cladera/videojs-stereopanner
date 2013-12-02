@@ -4,6 +4,10 @@ Stereo Panner is a plugin for video-js. The porpose of this package is extend vi
 
 With StereoPanner you can control which track listen to of a video in stereo. This feature is useful for multilingual broadcasts where you use stereo to send audio in two languages, for instance, the original language through the left channel and the simultaneous translation through the right channel.
 
+## Stability
+This plugin only works fine in Chrome due to this plugin uses [AudioContext Audio API](http://www.w3.org/TR/webaudio/)
+and this interface is not implemented in all browsers.
+
 ##Live-Demo
 
 Demo of StereoPanner plugin: http://cladera.github.io/stereopanner/
@@ -60,4 +64,5 @@ Back to stereo mode
 	mplayer.panToStereo();
 ```
 ##TODO
- - Create a audio toogle button in menu bar. 
+ - Create a audio toogle button in menu bar.
+ - Flash support
