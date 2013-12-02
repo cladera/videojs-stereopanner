@@ -1,8 +1,11 @@
 videojs-stereopanner
 ==================
-Stereo Panner is a plugin for video-js. The porpose of this package is extend video-js audio controls adding stereo panning methods.
+Stereo Panner is a plugin for video-js. The purpose of this plugin is extend video-js audio controls adding stereo
+panning methods.
 
-With StereoPanner you can control which track listen to of a video in stereo. This feature is useful for multilingual broadcasts where you use stereo to send audio in two languages, for instance, the original language through the left channel and the simultaneous translation through the right channel.
+With StereoPanner you can control which track listen to of a video in stereo. This feature is useful for multilingual
+broadcasts where you use stereo to send audio in two languages, for instance, the original language through the left
+channel and the simultaneous translation through the right channel.
 
 ##Installation
 Add videojs.stereopanner.min.js file to your head tag, just after videojs:
