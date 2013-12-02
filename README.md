@@ -38,7 +38,7 @@ videojs('myvideo').stereopanner({starting:'right'});
 ```
 
 ##API Methods
-Once the plugin is started, you can change change the stereo channel using the following functions:
+Once the plugin is started, you can change the stereo channel using the following functions:
 
 ### panToLeft() ###
 
