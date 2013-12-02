@@ -12,6 +12,7 @@ videojs.AudioContext = videojs.CoreObject.extend({
             window.AudioContext = window.AudioContext||window.webkitAudioContext;
         }
         catch(e) {
+            console.log(e);
             throw new Error(e);
         }
         this.context = new AudioContext();
@@ -95,15 +96,14 @@ videojs.plugin('stereopanner', function(options){
     //TODO: Merge options with defaults
     options = options || {};
 
-    player.on('firstplay', function(){
-        //TODO: Find the right way to get media element.
-        player.ac.connect(player.M);
+    //TODO: Find the right way to get media element.
+    player.ac.connect(player.M);
 
-        //TODO: Find right option key for starting channel
-        if(options.starting === 'right'){
-            player.panToRight();
-        }else {
-            player.panToLeft();
-        }
-    });
+    //TODO: Find right option key for starting channel
+    if(options.starting === 'right'){
+        player.panToRight();
+    }else {
+        player.panToLeft();
+    }
+
 });
