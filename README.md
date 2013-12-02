@@ -30,7 +30,7 @@ videojs('myvideo').stereopanner({starting:'right'});
 ```
 
 ##API Methods
-Once the plugin is started, you can change change the stereo channel using the following functions:
+Once the plugin is started, you can change the stereo channel using the following functions:
 
 ### panToLeft() ###
 
@@ -56,4 +56,4 @@ Back to stereo mode
 	mplayer.panToStereo();
 ```
 ##TODO
- - Create a audio toogle button in menu bar. 
+ - Create an audio toggle button in menu bar.
