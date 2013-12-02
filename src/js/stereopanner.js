@@ -95,7 +95,7 @@ videojs.plugin('stereopanner', function(options){
     //TODO: Merge options with defaults
     options = options || {};
 
-    player.ready(function(){
+    player.on('firstplay', function(){
         //TODO: Find the right way to get media element.
         player.ac.connect(player.M);
 
