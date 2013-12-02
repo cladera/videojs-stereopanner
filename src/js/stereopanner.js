@@ -89,7 +89,6 @@ videojs.Player.prototype.panToStereo = function(){
 };
 
 videojs.plugin('stereopanner', function(options){
-    console.log("Audio Panner Init");
     var player = this;
     player.ac = player.ac || videojs.AudioContext.create();
 
