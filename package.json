@@ -1,7 +1,7 @@
 {
-  "name": "videojs.audiopanner",
-  "version": "0.0.0",
-  "description": "VideJS Audio panning plugin",
+  "name": "videojs.stereopanner",
+  "version": "0.0.1",
+  "description": "VideJS Stereo panning plugin",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
