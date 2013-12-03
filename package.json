@@ -1,6 +1,6 @@
 {
   "name": "videojs.stereopanner",
-  "version": "0.0.3g",
+  "version": "0.0.3",
   "description": "VideJS Stereo panning plugin",
   "main": "index.js",
   "scripts": {
