@@ -1,11 +1,11 @@
 videojs-stereopanner
 ==================
-Stereo Panner is a plugin for video-js. The porpose of this package is extend video-js audio controls adding stereo panning methods.
+Stereo Panner is a plugin for video-js. The purpose of this package is to extend video-js audio controls adding stereo panning methods.
 
-With StereoPanner you can control which track listen to of a video in stereo. This feature is useful for multilingual broadcasts where you use stereo to send audio in two languages, for instance, the original language through the left channel and the simultaneous translation through the right channel.
+With StereoPanner you can control which track to listen to of a video in stereo. This feature is useful for multilingual broadcasts where you use stereo to send audio in two languages, for instance, the original language through the left channel and the simultaneous translation through the right channel.
 
 ## Stability
-This plugin only works fine in Chrome due to it uses [AudioContext Audio API](http://www.w3.org/TR/webaudio/)
+This plugin only works fine in Chrome due to  its use of [AudioContext Audio API](http://www.w3.org/TR/webaudio/)
 and this interface is not implemented in all browsers.
 
 ##Live-Demo
@@ -28,11 +28,11 @@ Add videojs.stereopanner.min.js file to your head tag, just after videojs:
 		...
 ```
 ##Usage
-After load video-js enable StereoPanner calling the plugin init:
+After loading video-js enable StereoPanner calling the plugin init:
 ```js
 videojs('myvideo').stereopanner();
 ````
-Additionally you can pass which track you want listen to first. The starting default is 'left':
+Additionally you can select the which track you want to listen to first. The starting default is 'left':
 ```js
 videojs('myvideo').stereopanner({starting:'right'});
 ```
@@ -64,5 +64,5 @@ Back to stereo mode
 	mplayer.panToStereo();
 ```
 ##TODO
- - Create a audio toogle button in menu bar.
+ - Create an audio toogle button in menu bar.
  - Flash support
